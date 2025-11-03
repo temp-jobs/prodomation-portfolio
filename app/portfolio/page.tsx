@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Card } from "@/components/ui/card"
@@ -153,9 +154,11 @@ export default function Portfolio() {
                 </div>
               </div>
 
-              <Button className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90">
-                Request Demo
-              </Button>
+              <Link href="/contact" className="w-full">
+                <Button className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90">
+                  Request Demo
+                </Button>
+              </Link>
             </div>
           </Card>
         </div>
