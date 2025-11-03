@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "ZclwuhjHa7TnrvvFj_lSC79abEZnZU47n7khYUpF6", // Add your actual verification code
-  },
+    google-site-verification: "ZclwuhjHa7TnrvvFj_lSC79abEZnZU47n7khYUpF6", // Add your actual verification code
     generator: 'v0.app'
+},
 }
 
 export default function RootLayout({
