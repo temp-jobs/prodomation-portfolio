@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Prodomation",
+  "url": "https://prodomation.com",
+  "logo": "https://prodomation.com/logo.png",
+  "description": "Intelligent Automation & Web Development Solutions for Business Transformation",
+  "sameAs": ["https://linkedin.com/company/prodomation", "https://twitter.com/prodomation"],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "telephone": "+1-234-567-890",
+    "email": "hello@prodomation.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  }
+}

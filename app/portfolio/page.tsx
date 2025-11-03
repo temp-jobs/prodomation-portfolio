@@ -1,170 +1,18 @@
-"use client"
+import type { Metadata } from "next"
+import PortfolioClient from "./portfolio-client"
 
-import { useState } from "react"
-import Link from "next/link"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+export const metadata: Metadata = {
+  title: "Portfolio & Case Studies | Prodomation Projects",
+  description:
+    "Explore Prodomation's successful automation projects and case studies. See how we've helped businesses with web development, chatbots, process automation, and IoT solutions.",
+  keywords: ["case studies", "portfolio", "automation projects", "success stories", "automation examples"],
+  openGraph: {
+    title: "Portfolio | Prodomation Case Studies",
+    description: "Discover our successful automation and development projects.",
+    url: "https://prodomation.com/portfolio",
+  },
+}
 
 export default function Portfolio() {
-  const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform Automation",
-      description: "Automated inventory management and order processing for a leading retail company.",
-      image: "/e-commerce-dashboard.png",
-      tags: ["Automation", "E-Commerce", "RPA"],
-      tech: ["Python", "Node.js", "PostgreSQL"],
-      results: "60% time savings on order processing",
-    },
-    {
-      id: 2,
-      title: "AI Customer Support Chatbot",
-      description: "Intelligent conversational AI handling 80% of customer inquiries automatically.",
-      image: "/chatbot-interface.png",
-      tags: ["AI", "Chatbot", "NLP"],
-      tech: ["Python", "TensorFlow", "Dialogflow"],
-      results: "45% reduction in support costs",
-    },
-    {
-      id: 3,
-      title: "IoT Manufacturing System",
-      description: "Real-time monitoring and predictive maintenance for smart manufacturing.",
-      image: "/iot-dashboard-factory.jpg",
-      tags: ["IoT", "Analytics", "Manufacturing"],
-      tech: ["IoT", "Apache Kafka", "Python"],
-      results: "35% decrease in downtime",
-    },
-    {
-      id: 4,
-      title: "Financial Process Automation",
-      description: "Streamlined invoice processing and reconciliation workflow.",
-      image: "/financial-dashboard-reports.jpg",
-      tags: ["Finance", "RPA", "Integration"],
-      tech: ["UiPath", "SAP", "Python"],
-      results: "80% faster processing",
-    },
-    {
-      id: 5,
-      title: "Healthcare Data Platform",
-      description: "HIPAA-compliant data integration and analysis platform.",
-      image: "/medical-data-dashboard.jpg",
-      tags: ["Healthcare", "Data", "Security"],
-      tech: ["Next.js", "TypeScript", "PostgreSQL"],
-      results: "Secure handling of 1M+ records",
-    },
-    {
-      id: 6,
-      title: "Supply Chain Optimization",
-      description: "Intelligent supply chain tracking and optimization system.",
-      image: "/supply-chain-tracking-map.jpg",
-      tags: ["Supply Chain", "Analytics", "AI"],
-      tech: ["React", "Node.js", "MongoDB"],
-      results: "25% cost reduction",
-    },
-  ]
-
-  const [selectedProject, setSelectedProject] = useState<(typeof projects)[0] | null>(null)
-
-  return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-
-      <div className="pt-32 pb-20">
-        {/* Header */}
-        <div className="container mx-auto px-4 mb-20">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-            Portfolio & Case Studies
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl">Explore our recent projects and success stories.</p>
-        </div>
-
-        {/* Projects Grid */}
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <Card
-                key={project.id}
-                className="overflow-hidden bg-card border-border hover:border-primary/50 transition-all duration-300 cursor-pointer group"
-                onClick={() => setSelectedProject(project)}
-              >
-                <div className="relative h-48 overflow-hidden bg-muted">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, i) => (
-                      <span key={i} className="text-xs px-3 py-1 bg-muted text-muted-foreground rounded-full">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Project Modal */}
-      {selectedProject && (
-        <div
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedProject(null)}
-        >
-          <Card className="bg-card border-border max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="p-8">
-              <button
-                onClick={() => setSelectedProject(null)}
-                className="float-right text-2xl text-muted-foreground hover:text-foreground"
-              >
-                ×
-              </button>
-
-              <img
-                src={selectedProject.image || "/placeholder.svg"}
-                alt={selectedProject.title}
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
-
-              <h2 className="text-3xl font-bold mb-4">{selectedProject.title}</h2>
-              <p className="text-muted-foreground mb-6">{selectedProject.description}</p>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <h4 className="font-bold mb-3">Technologies</h4>
-                  <div className="space-y-1">
-                    {selectedProject.tech.map((tech, i) => (
-                      <p key={i} className="text-muted-foreground">
-                        • {tech}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-3">Results</h4>
-                  <p className="text-primary font-semibold">{selectedProject.results}</p>
-                </div>
-              </div>
-
-              <Link href="/contact" className="w-full">
-                <Button className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90">
-                  Request Demo
-                </Button>
-              </Link>
-            </div>
-          </Card>
-        </div>
-      )}
-
-      <Footer />
-    </div>
-  )
+  return <PortfolioClient />
 }
