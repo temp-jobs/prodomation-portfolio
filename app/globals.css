@@ -1,0 +1,312 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Light mode colors */
+  --background: #ffffff;
+  --foreground: #0a192f;
+  --card: #f5f7fa;
+  --card-foreground: #0a192f;
+  --popover: #f5f7fa;
+  --popover-foreground: #0a192f;
+  --primary: #00d9ff;
+  --primary-foreground: #0a192f;
+  --secondary: #6a4aca;
+  --secondary-foreground: #ffffff;
+  --muted: #e0e7ff;
+  --muted-foreground: #64748b;
+  --accent: #00d9ff;
+  --accent-foreground: #0a192f;
+  --destructive: #ff4757;
+  --destructive-foreground: #fff;
+  --border: #e0e7ff;
+  --input: #f5f7fa;
+  --ring: #00d9ff;
+  --chart-1: #00d9ff;
+  --chart-2: #6a4aca;
+  --chart-3: #ff006e;
+  --chart-4: #00ffff;
+  --chart-5: #b537f2;
+  --radius: 1rem;
+  --sidebar: #f5f7fa;
+  --sidebar-foreground: #0a192f;
+  --sidebar-primary: #00d9ff;
+  --sidebar-primary-foreground: #0a192f;
+  --sidebar-accent: #6a4aca;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e0e7ff;
+  --sidebar-ring: #00d9ff;
+}
+
+.dark {
+  --background: #0a192f;
+  --foreground: #f5f7fa;
+  --card: #111e35;
+  --card-foreground: #f5f7fa;
+  --popover: #111e35;
+  --popover-foreground: #f5f7fa;
+  --primary: #00ffff;
+  --primary-foreground: #0a192f;
+  --secondary: #7a5af8;
+  --secondary-foreground: #f5f7fa;
+  --muted: #1e3a5f;
+  --muted-foreground: #a0aec0;
+  --accent: #00ffff;
+  --accent-foreground: #0a192f;
+  --destructive: #ff6b6b;
+  --destructive-foreground: #fff;
+  --border: #1e3a5f;
+  --input: #111e35;
+  --ring: #00ffff;
+  --chart-1: #00ffff;
+  --chart-2: #7a5af8;
+  --chart-3: #ff006e;
+  --chart-4: #00d9ff;
+  --chart-5: #b537f2;
+  --sidebar: #111e35;
+  --sidebar-foreground: #f5f7fa;
+  --sidebar-primary: #00ffff;
+  --sidebar-primary-foreground: #0a192f;
+  --sidebar-accent: #7a5af8;
+  --sidebar-accent-foreground: #f5f7fa;
+  --sidebar-border: #1e3a5f;
+  --sidebar-ring: #00ffff;
+}
+
+@theme inline {
+  --font-sans: "Inter", "Inter Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Added animation configuration for Tailwind CSS v4 */
+  --animate-slide-in-from-top-0: slide-in-from-top 0.3s ease-out;
+  --animate-slide-in-from-top-1: slide-in-from-top 0.3s ease-out;
+  --animate-slide-in-from-top-2: slide-in-from-top 0.3s ease-out;
+  --animate-slide-in-from-top-full: slide-in-from-top 0.3s ease-out;
+  --animate-slide-in-from-bottom-0: slide-in-from-bottom 0.3s ease-out;
+  --animate-slide-in-from-bottom-1: slide-in-from-bottom 0.3s ease-out;
+  --animate-slide-in-from-bottom-2: slide-in-from-bottom 0.3s ease-out;
+  --animate-slide-in-from-bottom-full: slide-in-from-bottom 0.3s ease-out;
+  --animate-slide-in-from-left-0: slide-in-from-left 0.3s ease-out;
+  --animate-slide-in-from-left-52: slide-in-from-left 0.3s ease-out;
+  --animate-slide-in-from-right-0: slide-in-from-right 0.3s ease-out;
+  --animate-slide-in-from-right-2: slide-in-from-right 0.3s ease-out;
+  --animate-slide-in-from-right-52: slide-in-from-right 0.3s ease-out;
+  --animate-slide-out-to-left-52: slide-out-to-left 0.3s ease-in;
+  --animate-slide-out-to-right-full: slide-out-to-right 0.3s ease-in;
+  --animate-fade-in-0: fade-in 0.2s ease-out;
+  --animate-fade-out-0: fade-out 0.2s ease-in;
+  --animate-fade-out-80: fade-out 0.2s ease-in;
+  --animate-zoom-in-95: zoom-in 0.2s ease-out;
+  --animate-zoom-out-95: zoom-out 0.2s ease-in;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Added cursor pointer to all buttons */
+  button,
+  [role="button"] {
+    @apply cursor-pointer;
+  }
+
+  /* Enhanced animation library with scroll and interaction effects */
+  @keyframes glow-pulse {
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slide-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes rotate-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(122, 90, 248, 0.5);
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slide-in-left 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.6s ease-out forwards;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .animate-rotate-slow {
+    animation: rotate-slow 20s linear infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 255, 255, 0.2) 50%, transparent 100%);
+    background-size: 1000px 100%;
+  }
+}
