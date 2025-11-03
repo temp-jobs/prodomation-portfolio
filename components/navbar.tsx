@@ -41,9 +41,11 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Button className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90">
-            Get Started
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90">
+              Get Started
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -69,9 +71,11 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90">
-              Get Started
-            </Button>
+            <Link href="/contact" className="w-full" onClick={() => setMobileMenuOpen(false)}>
+              <Button className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       )}
