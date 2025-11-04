@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Prodomation | Transform Your Business with Automation",
     description: "Expert solutions in automation, AI, and web development.",
-    url: "https://prodomation.com",
+    url: "https://prodomation.tech",
   },
 }
 
@@ -24,19 +24,19 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Prodomation",
-  url: "https://prodomation.com",
+  url: "https://prodomation.tech",
   description: "Intelligent Automation & Web Development Company",
-  logo: "https://prodomation.com/logo.png",
+  logo: "https://prodomation.tech/logo.png",
   sameAs: ["https://linkedin.com/company/prodomation", "https://twitter.com/prodomation"],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "Customer Support",
-    telephone: "+1-234-567-890",
+    telephone: "+9120316037",
     email: "hello@prodomation.com",
   },
   address: {
     "@type": "PostalAddress",
-    addressCountry: "US",
+    addressCountry: "India",
   },
 }
 
