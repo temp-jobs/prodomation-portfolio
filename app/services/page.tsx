@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Services | Automation & Development Solutions",
     description: "Complete automation and web development services for business transformation.",
-    url: "https://prodomation.com/services",
+    url: "https://prodomation.tech/services",
   },
 }
 

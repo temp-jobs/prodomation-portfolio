@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Prodomation | Our Mission & Vision",
     description: "Discover how Prodomation is revolutionizing business automation.",
-    url: "https://prodomation.com/about",
+    url: "https://prodomation.tech/about",
   },
 }
 

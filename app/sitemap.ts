@@ -3,31 +3,31 @@ import type { MetadataRoute } from "next"
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://prodomation.com",
+      url: "https://prodomation.tech",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://prodomation.com/about",
+      url: "https://prodomation.tech/about",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://prodomation.com/services",
+      url: "https://prodomation.tech/services",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: "https://prodomation.com/portfolio",
+      url: "https://prodomation.tech/portfolio",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://prodomation.com/contact",
+      url: "https://prodomation.tech/contact",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
