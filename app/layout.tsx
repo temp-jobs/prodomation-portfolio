@@ -24,9 +24,11 @@ export const metadata: Metadata = {
     "IoT",
     "smart automation",
     "digital transformation",
+    "application development",
+    "software development"
   ],
   metadataBase: new URL("https://prodomation.tech"),
-  canonical: "https://prodomation.tech",
+  // canonical: "https://prodomation.tech",
   openGraph: {
     title: "Prodomation | Intelligent Automation Solutions",
     description: "Transform your business with cutting-edge automation technology, Web/App and AI solutions.",
@@ -53,7 +55,6 @@ export const metadata: Metadata = {
   verification: {
     google: "ZclwuhjHa7TnrvvFj_lSC79abEZnZU47n7khYUpF6",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Prodomation | Schedule Your Consultation",
     description: "Reach out to discuss your automation and development needs.",
-    url: "https://prodomation.com/contact",
+    url: "https://prodomation.tech/contact",
   },
 }
 
