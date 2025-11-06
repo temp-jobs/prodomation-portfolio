@@ -48,22 +48,22 @@ export function Footer() {
             <h4 className="font-bold mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/portfolio" className="hover:text-primary transition-colors">
                   Web Development
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/portfolio" className="hover:text-primary transition-colors">
                   Chatbot Development
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/portfolio" className="hover:text-primary transition-colors">
                   Process Automation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/portfolio" className="hover:text-primary transition-colors">
                   IoT Solutions
                 </a>
               </li>
@@ -75,8 +75,8 @@ export function Footer() {
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
-                <a href="mailto:hello@prodomation.com" className="hover:text-primary transition-colors">
-                  hello@prodomation.com
+                <a href="mailto:hello@prodomation.tech" className="hover:text-primary transition-colors">
+                  hello@prodomation.tech
                 </a>
               </li>
               <li>
@@ -85,7 +85,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/1234567890" className="hover:text-primary transition-colors">
+                <a href="https://wa.me/7080313566" className="hover:text-primary transition-colors">
                   WhatsApp
                 </a>
               </li>

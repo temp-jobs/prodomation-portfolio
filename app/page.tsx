@@ -31,8 +31,8 @@ const organizationSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "Customer Support",
-    telephone: "+9120316037",
-    email: "hello@prodomation.com",
+    telephone: "+917080313566",
+    email: "hello@prodomation.tech",
   },
   address: {
     "@type": "PostalAddress",
