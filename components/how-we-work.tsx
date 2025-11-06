@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useRef, useState } from "react"
 import { useRouter } from "next/navigation"
+import Link from "next/link"
 
 export function HowWeWork() {
   const steps = [
@@ -80,9 +81,8 @@ export function HowWeWork() {
               ref={(el) => {
                 stepsRef.current[index] = el
               }}
-              className={`relative transition-all duration-500 ${
-                visibleSteps[index] ? "animate-fade-in-up" : "opacity-0"
-              }`}
+              className={`relative transition-all duration-500 ${visibleSteps[index] ? "animate-fade-in-up" : "opacity-0"
+                }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative mb-6">
@@ -107,12 +107,14 @@ export function HowWeWork() {
           <p className="text-muted-foreground mb-6">
             Let's start your digital transformation journey today with a free consultation.
           </p>
-          <button
-            onClick={() => router.push("/contact")}
-            className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105 cursor-pointer"
-          >
-            Start Your Project
-          </button>
+          <Link href={"/contact"} >
+            <button
+              onClick={() => router.push("/contact")}
+              className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105 cursor-pointer"
+            >
+              Start Your Project
+            </button>
+          </Link>
         </div>
       </div>
     </section>

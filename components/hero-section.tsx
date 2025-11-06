@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -22,9 +23,8 @@ export function HeroSection() {
         </div>
 
         <h1
-          className={`text-5xl md:text-7xl font-bold mb-6 leading-tight transition-all duration-1000 ${
-            isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-          }`}
+          className={`text-5xl md:text-7xl font-bold mb-6 leading-tight transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+            }`}
           style={{ animationDelay: "0.2s" }}
         >
           Building Smart Digital Systems for{" "}
@@ -34,9 +34,8 @@ export function HeroSection() {
         </h1>
 
         <p
-          className={`text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto transition-all duration-1000 ${
-            isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-          }`}
+          className={`text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+            }`}
           style={{ animationDelay: "0.4s" }}
         >
           We empower businesses to automate operations, innovate faster, and scale intelligently with cutting-edge
@@ -44,25 +43,28 @@ export function HeroSection() {
         </p>
 
         <div
-          className={`flex flex-col md:flex-row gap-4 justify-center transition-all duration-1000 ${
-            isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
-          }`}
+          className={`flex flex-col md:flex-row gap-4 justify-center transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
+            }`}
           style={{ animationDelay: "0.6s" }}
         >
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-lg hover:shadow-primary/50 hover:scale-105 transition-all duration-300"
-          >
-            Book Free Consultation
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-primary text-primary hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 group bg-transparent"
-          >
-            Explore Services
-            <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-          </Button>
+          <Link href="/contact" >
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-lg hover:shadow-primary/50 hover:scale-105 transition-all duration-300"
+            >
+              Book Free Consultation
+            </Button>
+          </Link>
+          <Link href="/services">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 group bg-transparent"
+            >
+              Explore Services
+              <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+            </Button>
+          </Link>
         </div>
 
         <div className="mt-16 flex justify-center animate-bounce">
