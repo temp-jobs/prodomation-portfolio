@@ -187,7 +187,7 @@ export default function ContactClientPage() {
                       className="text-muted-foreground hover:text-secondary transition-colors"
                       aria-label="Contact via WhatsApp"
                     >
-                      +1 (234) 567-890
+                      +91 9120316037, +91 7080313566
                     </a>
                   </div>
 
