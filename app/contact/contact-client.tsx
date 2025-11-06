@@ -172,18 +172,18 @@ export default function ContactClientPage() {
                   <div>
                     <h3 className="font-semibold text-primary mb-2">Email</h3>
                     <a
-                      href="mailto:hello@prodomation.com"
+                      href="mailto:hello@prodomation.tech"
                       className="text-muted-foreground hover:text-primary transition-colors"
                       aria-label="Email Prodomation"
                     >
-                      hello@prodomation.com
+                      hello@prodomation.tech
                     </a>
                   </div>
 
                   <div>
                     <h3 className="font-semibold text-secondary mb-2">WhatsApp</h3>
                     <a
-                      href="https://wa.me/1234567890"
+                      href="https://wa.me/7080313566"
                       className="text-muted-foreground hover:text-secondary transition-colors"
                       aria-label="Contact via WhatsApp"
                     >
@@ -209,7 +209,7 @@ export default function ContactClientPage() {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-center">
                     <span className="text-primary mr-3">✓</span>
-                    <span>10+ years of experience in automation</span>
+                    <span>Numerous years of experience in automation</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-secondary mr-3">✓</span>
@@ -217,7 +217,7 @@ export default function ContactClientPage() {
                   </li>
                   <li className="flex items-center">
                     <span className="text-primary mr-3">✓</span>
-                    <span>Proven track record with 500+ projects</span>
+                    <span>Proven track record with numerous projects</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-secondary mr-3">✓</span>
