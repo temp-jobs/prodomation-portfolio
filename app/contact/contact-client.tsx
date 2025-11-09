@@ -24,11 +24,28 @@ export default function ContactClientPage() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 3000)
-    setFormData({ name: "", email: "", company: "", projectType: "", message: "" })
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+        setTimeout(() => setSubmitted(false), 3000)
+        setFormData({ name: "", email: "", company: "", projectType: "", message: "" })
+      } else {
+        console.error("[v0] Form submission failed")
+        alert("Failed to send message. Please try again.")
+      }
+    } catch (error) {
+      console.error("[v0] Form submission error:", error)
+      alert("An error occurred. Please try again.")
+    }
   }
 
   return (
@@ -36,7 +53,7 @@ export default function ContactClientPage() {
       <Navbar />
 
       <div className="pt-32 pb-20">
-        {/* Header - <CHANGE> Added H1 with primary keyword and schema data */}
+        {/* Header - Added H1 with primary keyword and schema data */}
         <div className="container mx-auto px-4 mb-20">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
             Ready to Automate Your Business?

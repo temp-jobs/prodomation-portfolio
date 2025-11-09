@@ -55,6 +55,7 @@ export const metadata: Metadata = {
   verification: {
     google: "ZclwuhjHa7TnrvvFj_lSC79abEZnZU47n7khYUpF6",
   },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
