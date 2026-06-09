@@ -30,7 +30,7 @@ export default function Milestones() {
               ISO Certified For Quality &amp; Excellence
             </h3>
             <p className="text-muted leading-relaxed">
-              Techasoft has successfully obtained ISO certification, demonstrating compliance with global
+              Prodomation Technologies has successfully obtained ISO certification, demonstrating compliance with global
               quality standards and best practices. It strengthens our promise of consistent performance,
               customer satisfaction, and operational excellence.
             </p>

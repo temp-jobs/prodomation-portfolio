@@ -106,12 +106,12 @@ export const testimonials = [
   {
     name: 'Nishant Kumar',
     role: 'Bravo Pharma',
-    quote: 'Techasoft delivers services on time with no compromise in quality. Analytical skills and responsiveness are the quality that I like the most.',
+    quote: 'Prodomation Technologies delivers services on time with no compromise in quality. Analytical skills and responsiveness are the quality that I like the most.',
   },
   {
     name: 'Bhuvan Patil',
     role: 'Entrepreneur',
-    quote: 'We are very satisfied and happy to have found Techasoft as our development partner. They are true professionals.',
+    quote: 'We are very satisfied and happy to have found Prodomation Technologies as our development partner. They are true professionals.',
   },
   {
     name: 'Nikhil Kumar',
@@ -121,17 +121,17 @@ export const testimonials = [
   {
     name: 'Andrew Brooks',
     role: 'Entrepreneur',
-    quote: 'I like the professionalism Techasoft Pvt Ltd has and the companies attentive nature. They deliver the product on time.',
+    quote: 'I like the professionalism Prodomation Technologies Pvt Ltd has and the companies attentive nature. They deliver the product on time.',
   },
   {
     name: 'Deepak Singh',
     role: 'Entrepreneur',
-    quote: 'Techasoft has developed a good understanding of our own vision and work flows. I would easily recommend them for any of my projects.',
+    quote: 'Prodomation Technologies has developed a good understanding of our own vision and work flows. I would easily recommend them for any of my projects.',
   },
   {
     name: 'Adil Khan',
     role: 'Entrepreneur',
-    quote: 'It has been a pleasure working with Techasoft team. The company is thorough, hard working and devoted to the goals of any given project.',
+    quote: 'It has been a pleasure working with Prodomation Technologies team. The company is thorough, hard working and devoted to the goals of any given project.',
   },
 ]
 

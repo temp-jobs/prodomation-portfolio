@@ -66,7 +66,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-400 text-sm">
-            &copy; {new Date().getFullYear()} Techasoft. All rights reserved.
+            &copy; {new Date().getFullYear()} Prodomation Technologies. All rights reserved.
           </p>
           <div className="flex gap-4">
             {socialLinks.map((social) => (
