@@ -21,8 +21,12 @@ export default function Blogs() {
               key={blog.title}
               className="group bg-slate-50 rounded-xl overflow-hidden border border-slate-100 hover:shadow-lg transition-shadow cursor-pointer"
             >
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <span className="text-5xl opacity-50">📰</span>
+              <div className="h-48 overflow-hidden relative">
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">

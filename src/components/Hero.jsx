@@ -57,7 +57,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-accent text-white px-6 py-3 rounded-xl font-bold shadow-xl">
-                6+ Years Experience
+                1+ Years Experience
               </div>
             </div>
           </div>

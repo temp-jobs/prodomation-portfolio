@@ -8,6 +8,10 @@ export const socialLinks = [
     name: 'LinkedIn',
     href: 'https://www.linkedin.com/company/prodomation',
   },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/prodomation.tech',
+  },
 ]
 
 export const navLinks = [
@@ -136,19 +140,49 @@ export const testimonials = [
 ]
 
 export const milestones = [
-  { value: '6+', label: 'Years experience' },
-  { value: '100+', label: 'Websites built' },
-  { value: '15+', label: 'Service locations' },
-  { value: '35+', label: 'Happy customers' },
+  { value: '1+', label: 'Years experience' },
+  { value: '20+', label: 'Websites built' },
+  { value: '5+', label: 'Service locations' },
+  { value: '10+', label: 'Happy customers' },
 ]
 
 export const portfolioItems = [
-  { title: 'Healthcare Portal', category: 'Web App', color: 'from-blue-500 to-cyan-400' },
-  { title: 'E-commerce Platform', category: 'Mobile App', color: 'from-purple-500 to-pink-400' },
-  { title: 'Logistics Dashboard', category: 'Enterprise', color: 'from-orange-500 to-yellow-400' },
-  { title: 'Banking Solution', category: 'FinTech', color: 'from-green-500 to-emerald-400' },
-  { title: 'Travel Booking App', category: 'Mobile App', color: 'from-indigo-500 to-blue-400' },
-  { title: 'CRM System', category: 'SaaS', color: 'from-red-500 to-rose-400' },
+  {
+    title: 'Healthcare Portal',
+    category: 'Web App',
+    color: 'from-blue-500 to-cyan-400',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    title: 'E-commerce Platform',
+    category: 'Mobile App',
+    color: 'from-purple-500 to-pink-400',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    title: 'Logistics Dashboard',
+    category: 'Enterprise',
+    color: 'from-orange-500 to-yellow-400',
+    image: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    title: 'Banking Solution',
+    category: 'FinTech',
+    color: 'from-green-500 to-emerald-400',
+    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    title: 'Travel Booking App',
+    category: 'Mobile App',
+    color: 'from-indigo-500 to-blue-400',
+    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    title: 'CRM System',
+    category: 'SaaS',
+    color: 'from-red-500 to-rose-400',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80',
+  },
 ]
 
 export const blogs = [
@@ -157,35 +191,41 @@ export const blogs = [
     date: '19-05-2026',
     title: '7 Ways To Strengthen The Authentication System Disaster Recovery',
     excerpt: 'Authentication outages can freeze payroll, delay patient visits, interrupt refills, and block clinic...',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80',
   },
   {
     category: 'Technology',
     date: '19-05-2026',
     title: '8 Benefits Of Running Windows On Mac',
     excerpt: 'Mac computers serve many people well, yet daily work still reaches beyond one operating system...',
+    image: 'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=600&q=80',
   },
   {
     category: 'Customer Relationship',
     date: '19-05-2026',
     title: 'How Appointment Booking Services Improve Lead Conversion Rates',
     excerpt: 'Lead conversion often improves or stalls in the brief stretch between first interest and first contact...',
+    image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80',
   },
   {
     category: 'Technology',
     date: '19-05-2026',
     title: 'What Is An MCP Gateway: Control Plane Patterns For AI Agents',
     excerpt: 'An MCP gateway acts as the control plane between AI agents and the Model Context Protocol servers...',
+    image: 'https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=600&q=80',
   },
   {
     category: 'Digital Marketing',
     date: '19-05-2026',
     title: 'Why Most Ad Campaigns Fail Due To Weak Creative Iteration',
     excerpt: 'The digital advertising landscape has reached a breaking point. Most ad campaigns fail not because...',
+    image: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&w=600&q=80',
   },
   {
     category: 'Technology',
     date: '19-05-2026',
     title: 'The 2026 Multi-Accounting Benchmark: AI vs. Legacy Antidetect Infrastructure',
     excerpt: 'In the hyper-competitive landscape of 2026, the digital marketing industry has moved past the...',
+    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
   },
 ]

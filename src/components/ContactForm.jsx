@@ -54,7 +54,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-dark">Location</h4>
-                  <p className="text-muted text-sm">Lucknow, India</p>
+                  <p className="text-muted text-sm">Banglore,Lucknow, India</p>
                 </div>
               </div>
             </div>
